@@ -4,3 +4,7 @@ __pycache__/
 ROADMAP.txt
 after_effects/
 wallets.json
+
+.idea/
+
+tokens.json

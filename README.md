@@ -38,12 +38,19 @@ git clone https://github.com/0xtaodev/jupiter-python-cli
 ```
 💻 **Create a virtual environnment**
 ```sh
-python -m venv venv
+conda create --name jupiter-cli python=3.11
+
 ```
 🌐 **Activate Virtual Environnement**
 ```sh
-.\venv\Scripts\Activate.ps1
+conda activate jupiter-cli
 ```
+
+**Install requirements**
+```sh
+pip install -r requirements.txt
+```
+
 ▶️ **Start CLI**
 ```sh
 python main.py

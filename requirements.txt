@@ -4,3 +4,4 @@ pyfiglet
 pandas
 tabulate
 yaspin
+colorama

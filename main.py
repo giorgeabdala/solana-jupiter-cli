@@ -97,6 +97,7 @@ class Config_CLI():
         """Asks the user if they want the CLI to take a small percentage of fees during their swaps."""
         collect_fees = inquirer.select(message="Would you like CLI to collect small fees from your swaps? (0.005%)", choices=["Yes", "No"]).execute_async()
         confirm = inquirer.select(message="Confirm?", choices=["Yes", "No"]).execute_async()
+        confirm = "No"
         if confirm == "Yes":
             config_data = Config_CLI.get_config_data()
             config_data['COLLECT_FEES'] = True if collect_fees == "Yes" else False
@@ -424,7 +425,10 @@ class Token_Sniper():
                 swap_data = {
                     "quoteResponse": quote_response,
                     "userPublicKey": wallet.wallet.pubkey().__str__(),
-                    "wrapUnwrapSOL": True
+                    "wrapUnwrapSOL": True,
+                    "prioritizationFeeLamports": config_data['FEE_LAMPORTS']
+
+
                 }
                 
                 retries = 0

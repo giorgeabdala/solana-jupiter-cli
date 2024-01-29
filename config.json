@@ -1,9 +1,10 @@
 {
-    "FIRST_LOGIN": true,
+    "FIRST_LOGIN": false,
     "LAST_WALLET_SELECTED": "1",
     "COLLECT_FEES": false,
-    "RPC_URL": "",
+    "RPC_URL": "https://go.getblock.io/b99b9b7a29b34f76ae5701abdbc4eb9e",
     "DISCORD_WEBHOOK": "",
     "TELEGRAM_BOT_TOKEN": "",
-    "TELEGRAM_CHAT_ID": 0
+    "TELEGRAM_CHAT_ID": 0,
+    "FEE_LAMPORTS": 6000000
 }
